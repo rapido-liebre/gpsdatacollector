@@ -54,8 +54,10 @@ Dockerfile is practically almost ready, but still has a problem getting the dock
 ### Other
 Lack of:
 * metrics collection
+* better logging
 * .dockerignore file
 * .gitignore file
+* other nice features :-)
 
 ## Project structure
 
