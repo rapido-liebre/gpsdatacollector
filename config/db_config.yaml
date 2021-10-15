@@ -1,0 +1,7 @@
+database:
+  name: "gps"
+  host: "localhost"
+  user: "admin"
+  password: "password"
+  port: "5436"
+  ssl_mode: "disable"
