@@ -1,0 +1,12 @@
+postgres:
+  ports:
+    - '5436:5432'
+  restart: always
+  image: postgres:9.6.5-alpine
+  environment:
+    POSTGRES_DB: gps
+    POSTGRES_USER: admin
+    POSTGRES_PASSWORD: password
+  volumes:
+    - ./postgres-initdb.sh:/docker-entrypoint-initdb.d/init.sh
+    - ./gps.sql:/docker-entrypoint-initdb.d/
